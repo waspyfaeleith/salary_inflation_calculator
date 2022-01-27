@@ -57,8 +57,6 @@ year = int(input("Enter the year you started: "))
 
 inflation_linked_salary = calc_inflated_salary(filter_rates(rates, year), base_salary)
 
-# print(Decimal(inflation_linked_salary))
-
 print(
     f"A salary of £{base_salary} in {year} would be worth £{round(inflation_linked_salary,2)} in {datetime.today().year}"
 )
